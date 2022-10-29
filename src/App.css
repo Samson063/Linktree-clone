@@ -1,38 +1,154 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #ffffff;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  max-width: 100vw;
+}
+
+header,
+main,
+footer {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+header {
+  margin: 2rem 0;
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+header a {
+  display: block;
+  color: #101828;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.profile {
+  margin-left: 15rem;
+  position: relative;
+}
+
+.hover{
+  margin-left: -1rem;
+}
+
+.hover {
+  position: absolute;
+  left: 3.3rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hover:hover {
+  opacity: 1;
+}
+
+main .buttons a {
+  display: block;
+  text-decoration: none;
+  color: #101828;
+  background-color: #eaecf0;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+main .buttons a:hover {
+  /* border: 1px solid #101828; */
+  background-color: #d0d5dd;
+}
+
+.hidden,
+.option_icon {
+  display: none;
+}
+
+.share_icon {
+  margin-left: 3rem;
+}
+
+.icons {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  margin: 1.5rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+small {
+  color: #667085;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo1{
+   margin-left: 50px;
+}
+
+footer {
+  border-top: 1px solid #eaecf0;
+  margin: 3rem 0 0;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.footer2{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .profile {
+    margin-left: 4rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hover{
+    margin-left: -1rem;
+  }
+
+  main .buttons a {
+    width: 95%;
+  }
+
+  footer,
+  .share_icon {
+    display: none;
+  }
+
+  .option_icon {
+    display: inline;
+  }
+
+  .footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer2 img{
+    padding: 7px 0 7px 0;
+    width: 150px;
   }
 }
