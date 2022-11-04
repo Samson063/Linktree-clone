@@ -1,14 +1,15 @@
 import './App.css';
-import Anchors from './components/Anchors';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Index from './components/Index';
+import Contact from './pages/Contact';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Header />
-      <Anchors />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Index />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
     </>
   );
 }
