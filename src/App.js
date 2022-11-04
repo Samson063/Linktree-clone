@@ -1,7 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Index from './components/Index';
 import Contact from './pages/Contact';
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

@@ -36,12 +36,12 @@ const Contact = () => {
             <input
               type='email'
               id='message'
-              placeholder='Send me a message and Ill reply you as soon as possible...'
+              placeholder='Send me a message and I will reply you as soon as possible...'
             />
           </div>
           <div className='checkbox'>
             <label className='checking' htmlFor='checkbox'>
-              You agree to providing your data to Abdul who may contact you.
+              You agree to providing your data to Samson who may contact you.
             </label>
             <input type='checkbox' id='check' />
           </div>
