@@ -24,9 +24,6 @@ const Anchors = () => {
         <a href={zuriBooks} id='book__python'>
           Python Books
         </a>
-        <a href={zuriBooks} id='book__python'>
-          Python Books
-        </a>
         <a href={pitch} id='pitch'>
           Background Check for Coders
         </a>

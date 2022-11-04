@@ -34,9 +34,9 @@ const Contact = () => {
           <div className='message'>
             <label htmlFor='message'>Message</label>
             <input
-              type='email'
+              type='text'
               id='message'
-              placeholder='Send me a message and I will reply you as soon as possible...'
+              placeholder='Send me a message and Ill reply you as soon as possible...'
             />
           </div>
           <div className='checkbox'>
