@@ -119,6 +119,7 @@ footer {
   display: none;
 }
 
+
 @media (max-width: 767px) {
   .profile {
     margin-left: 4rem;
@@ -151,4 +152,5 @@ footer {
     padding: 7px 0 7px 0;
     width: 150px;
   }
+
 }
